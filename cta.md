@@ -1,5 +1,5 @@
 # Let's Get Started!
-The goal of this sample project is to mimic a common workflow: reviewing a spec and come up with a (initial) approach.
+The goal of this sample project is to mimic a common workflow: review a spec and come up with a (initial) approach.
 
 Write as much code as you need to get your ideas accross, but **you should not fully implement the spec end-to-end for this**. 
 
