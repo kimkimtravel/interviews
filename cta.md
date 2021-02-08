@@ -5,7 +5,7 @@ Write as much code as you need to get your ideas accross, but **you should not f
 
 You can keep everything in 1 file, just be clear what belongs where.
 
-Feel free to supplement certain areas with pseudocode/comments, but use your judgement on where it's unnecessary to see the level of detail in the design review, and where it's a bit "hand-wavy" to skip important details.
+Feel free to supplement certain areas with pseudocode/comments, but use your judgement on where it's unnecessary to see the level of detail in the design review, and where it's a bit too "hand-wavy" and skipping over important details.
 
 ## Spec
 ### Jira Story
