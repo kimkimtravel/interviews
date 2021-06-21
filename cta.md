@@ -7,6 +7,8 @@ You can keep everything in 1 file, just be clear what belongs where.
 
 Feel free to supplement certain areas with pseudocode/comments, but use your judgement on where it's unnecessary to see the level of detail in the design review, and where it's a bit too "hand-wavy" and skipping over important details.
 
+**NOTE: I am more interested in the overall structure of the logic for this project than the UI/view layer implementation. Yes, this could be done in a simple way with a helper wrapping link_to that sets some defaults, etc, but the goal of this project is to design some way to ensure that all copy is consistent across the site where it needs to be, and differnet in different contexts. If you have any questions about this, please ask so that you don't focus on the wrong things :) **
+
 ## Spec
 ### Jira Story
 *(text below if the image is unreadable)*
