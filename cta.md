@@ -28,7 +28,7 @@ Placements (screenshots of all below):
 
 We want the phrasing to be the same for all button text (eg "Get Started"), regardless of the placement. Some placements may have room for an optional title and subtitle phrase (eg "Customize your trip with help from a local travel specialist.")
 
-When clicked, we want to take the user to the start of our onboarding page (eg `onboarding_path`).
+When clicked, we want to take the user to the start of our onboarding page (eg `onboarding_path`), perhaps with different URL or tracking params based on the placement and other context.
 
 ### Design Mocks
 You can find the current mocks in our [shared Figma doc](https://www.figma.com/file/DYnrGC3gD0MDNd67nvoXlq/Get-Started-CTA-interview?node-id=0%3A1)
