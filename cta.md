@@ -7,7 +7,7 @@ You can keep everything in 1 file, just be clear what belongs where.
 
 Feel free to supplement certain areas with pseudocode/comments, but use your judgement on where it's unnecessary to see the level of detail in the design review, and where it's a bit too "hand-wavy" and skipping over important details.
 
-**NOTE: I am more interested in the overall structure of the logic for this project than the UI/view layer implementation. Yes, this could be done in a simple way with a helper wrapping link_to that sets some defaults, etc, but the goal of this project is to design some way to ensure that all copy is consistent across the site where it needs to be, and differnet in different contexts. If you have any questions about this, please ask so that you don't focus on the wrong things :)**
+**NOTE: I am more interested in the logic for this project compared to the the actual UI/view layer implementation. The goal of this project is to design some way to ensure that all copy is consistent across the site where it needs to be, and differnet in different contexts. Perhaps some model, decorator, factory, etc. If you have any questions about this, please ask so that you don't focus on the wrong things :)**
 
 ## Spec
 ### Jira Story
@@ -16,7 +16,7 @@ Feel free to supplement certain areas with pseudocode/comments, but use your jud
 ![Jira Story](images/cta_jira.png)
 
 #### Copy in case screenshot is unreadable...
-For this project, we want to add a CTA (call to action) signup button to a few different pages on the site.
+For this project, we want to add a CTA (call to action) signup button, title, and subtitle across a few different pages on the site.
 
 Placements (screenshots of all below):
 
@@ -26,7 +26,7 @@ Placements (screenshots of all below):
 * In-line placement
 * Sticky header placement
 
-We want the phrasing to be the same for all button text (eg "Get Started"), regardless of the placement. Some placements may have room for an optional title and subtitle phrase (eg "Customize your trip with help from a local travel specialist.")
+We want the phrasing to be the same for all button text (eg "Get Started"), regardless of the placement. Some placements may have room for an optional title and subtitle phrase (eg "Customize your trip with help from a local travel specialist.") You may notice that they are not always consistent.
 
 When clicked, we want to take the user to the start of our onboarding page (eg `onboarding_path`), perhaps with different URL or tracking params based on the placement and other context.
 
@@ -38,17 +38,17 @@ You've read through the spec, looked at the design, and you have a pretty good i
 
 Before diving in, writing all the code, and submitting a pull request, we are going to have a code design review to go through your planned approach. 
 
-Perhaps the requirements have changed?
+Perhaps the product equirements have changed?
 
 ### In scope
-Prepare your approach and any code/details to help facilitate a thorough discussion of the approach, tradeoffs, etc.
+Prepare your approach and any code/details to help facilitate a thorough discussion of the approach, tradeoffs you made and why, etc.
 
-You will need to write *some* code before the review discussion to show your approach and test out a few of your assumptions/ideas to see if they work as you expect they will.
+You will need to write *some* code before the review discussion to show your approach and test out a few of your assumptions/ideas to see if they work as you expect they will (this code is ideally rails/ruby and more focused on the logic and setup than the creating of the <button> element and css)
 
 Treat this as if it were a project assigned to you your first week at kimkim. Ask questions, clarifications, bounce ideas if that's helpful.
 
 ### Out of scope
-Build only what you need in order to be able to communicate your approach to another engineer on the team.
+This is not a demo. Build only what you need in order to be able to communicate your approach to another engineer on the team.
 
 YOU DO NOT need to fully implement this project. This is not intended to be a "takehome project" at that level. It does not need to be complete, be syntactically correct, or "compile/run". But there should be enough structure, scaffolding, placeholders to understand how it works. 
 
@@ -59,4 +59,4 @@ If you feel like you want to show how your code would handle the end-to-end logi
 Don't worry about multiple files/directory structure/etc. You can put everything in 1 file, just clearly show what belongs where.
 
 ## Anything unclear?
-Just ask 🙂
+Just ask 🙂. (again, this is meant to be like a normal project where you can bounce off ideas, ask for clarifications, etc).
