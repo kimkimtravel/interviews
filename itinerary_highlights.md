@@ -7,14 +7,47 @@ There are several possible aspects of this project, here is a general overview, 
 
 ## Design Mocks
 ### Display
-This is how we want the highlights to display on the itinerary. We only want to show the row if there are 3+ highlights (otherwise it looks too empty).
+This is how we want the highlights to display on the itinerary (photo and title, you can ignore the photo caption). 
+We only want to show the row if there are 3+ highlights (otherwise it looks too empty).
 
 ![Highlights Preview](images/itinerary_highlights/highlights_preview.png)
 
 ### Mark as highlight
-Here's an example for a location, but we want to add similar flows for an Activity and/or Hotel (different screens, similar concept). Once a highlight is created from an obect, we want the menu text to change to "Edit highlght" to edit the existing one, not create another new one each time.
+Here's an example for a location, but we want to add similar flows for an Activity and/or Hotel (different screens, similar concept). Once a highlight is created from an object, we want the menu text to change to "Edit highlight" to edit the existing one, not create another new one each time.
 
 ![Mark as highlight](images/itinerary_highlights/add_as_highlight.png)
 
 When creating/editing the highlight, we set a default photo and name, but we want the option to override either as desired.
 ![Create and edit highlight](images/itinerary_highlights/create_highlight.png)
+
+## Code
+Here is some (very) boilerplate code to get you oriented slightly
+
+```
+class Photo < ActiveRecord::Base
+  attribute :url, :string
+  ...
+end
+
+class Location < ActiveRecord::Base
+  attribute :name, :string
+  has_one :photo
+  ...
+end
+
+class Activity < ActiveRecord::Base
+  attribute :name, :string
+  has_one :photo
+  ...
+end
+
+class Hotel < ActiveRecord::Base
+  attribute :name, :string
+  has_one :photo
+  ...
+end
+
+class Itinerary < ActiveRecord::Base
+  ...
+end
+```
