@@ -7,7 +7,9 @@ For each action, we create a new `Message` object in the trip conversation, and 
 
 The problem is that people use this feature a lot, and it generates a lot of emails in a row as a result.
 
-Our solution is to batch the emails such that we just send one per "session". This is how we want it to behave. When someone engages with the trip plan, still create the messsage in teh conversation right away, but hold off sending an email for 10 minutes to see if any other notifications happen in the mean time. For each notification, push this time back 10 minutes, so that we send the email only after there are no new notifications for 10 minutes. (If somone adds another comment 2 hours later, that's fine if we send a separate email for that "session").
+Our solution is to batch the emails such that we just send one per "session". This is how we want it to behave:
+
+When someone engages with the trip plan, still create the messsage in teh conversation right away, but hold off sending an email for 10 minutes to see if any other notifications happen in the mean time. For each notification, push this time back 10 minutes, so that we send the email only after there are no new notifications for 10 minutes. (If somone adds another comment 2 hours later, that's fine if we send a separate email for that "session").
 
 ## Current Structures
 Here's some (simplified) code to start with (NOTE: these are real classes, but I've removed some code that's irrelevant for this exercise)
