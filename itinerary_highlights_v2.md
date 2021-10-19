@@ -5,7 +5,15 @@ We already have some basic highlight infrastruture in place that is being used, 
 
 I'll outline what we currently have, what we want, and give some (simplified) version of different code and structure.
 
+## Interview Format
 Our goal is to mimic a typical project as best we can, including a project spec review, decisions on how to implement (especially when there is existing code to work with or around), and finally a bit of code for some places.
+
+Please prepare by familiarizing yourself with this mock spec (this is a real project we are working on, w/ a few things simplified). Then we will set up a call to talk through it together and your proposed approach: how would you structure this on the DB and backend side? What questions do you have? What tradeoffs can/should we make? 
+
+At some point, we'll write a bit of code based on where the discussion leads. It doesn't need to be production-ready by any means, more of a way to see how the different decisions/flows/logic could be implemented.
+
+Please reach out w/ any questions at any time, just as you would for any other typical project.
+
 
 ## What we currently have
 We currently have the ability to add/edit text highlights for a `TripPlan`. This gives lots of flexibility for how we use this feature, but it's just text and it's possible that the highlight text drifts from the actual details of the itinerary (eg an activity is removed/adjusted and someoen forgets to remove the highlight for it, or a new activity that's very important to the traveler is added and no corresponding highlights text is added).
