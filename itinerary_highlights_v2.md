@@ -103,9 +103,9 @@ end
 ```
 
 ## Deliverables 
-To start, pretend we are going to have an engineering design review, also with the product team to decide how to structure all of this, what new models to create, etc. 
+Pretend we are going to have an engineering design review, also with the product team to decide how to structure all of this, what new models to create, etc. 
 
-Put together a rough outline of changes/additions to models, services, decorators, controllers, DB, whatever you recommend. 
+Put together a rough outline of ideas, questions, changes/additions to models, services, decorators, controllers, DB, whatever you recommend. This shouldn't be a fully coded implementation, but it should be enough to have a conversation around.
 
 Send this to us before we chat so that we can prepare a few questions based on it.
 
