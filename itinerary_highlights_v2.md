@@ -5,6 +5,11 @@ We already have some basic highlight infrastruture in place that is being used, 
 
 I'll outline what we currently have, what we want, and give some (simplified) version of different code and structure.
 
+## Demo
+Here is a demo of the highlights project in action (w/ a bit of background)
+
+https://www.loom.com/share/c71e12c02e3a41c1b0cc80fb6fd6b814
+
 ## Interview Format
 Our goal is to mimic a typical project as best we can, including a project spec review, decisions on how to implement (especially when there is existing code to work with or around), and finally a bit of code for some places.
 
