@@ -45,10 +45,16 @@ It's not a good sign if you have no questions to ask.
 
 ## Project
 There are 2 parts to this project:
-1. We want to add a new section to the Activity Review form to to ask more about how each activity matched up with the expectations based on their interests by adding a new section to the 
+1. We want to add a new section to the Activity Review form to to ask more about how each activity 
+matched up with the expectations based on their interests by adding a new section to the Activity Review form page.
 2. We want to add a few follow up questions after all activities are reviewed that ask about their interests in general.
 
 The business logic for each case will be outlined below.
+
+For all trip features we ask about, we want to limit this list to only those that were originally part of the traveler's requested/interested trip_feature.
+
+For example, let's say a traveler said they care about wildlife, hiking, and hot springs. We would not want to ask about any other trip features 
+that may be linked to certain activities they did (eg if one activity also had the tag "coffee tasting")
 
 ## Demo
 Here is a quick walkthrough video/demo of the activity reviews in action, along with some explanation of the Trip Feature ratings.
@@ -90,6 +96,9 @@ We want a way to store this information for all the ratings in the system.
 class User
   attribute :id
   attribute :name
+
+  # a list of TripFeature that the user is interested in having included in their trip (entered during onboarding)
+  has_many :requested_trip_features, class_name: 'TripFeature' 
   ...
 end
 
@@ -97,6 +106,9 @@ end
 class Trip
   attribute :id
   belongs_to :traveler, class_name: 'User'
+  
+  # The list of activities that were included in this traveler's trip
+  has_many :activities
   ...
 end
 
